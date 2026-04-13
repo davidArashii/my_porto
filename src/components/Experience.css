@@ -1,0 +1,143 @@
+.experience {
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 16px;
+  height: 100%;
+  width: 2px;
+  background: var(--border-color);
+}
+
+@media (min-width: 768px) {
+  .timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  width: 100%;
+  padding-left: 48px;
+}
+
+@media (min-width: 768px) {
+  .timeline-item {
+    width: 50%;
+    padding-left: 0;
+    padding-right: 48px;
+  }
+
+  .timeline-item:nth-child(even) {
+    margin-left: auto;
+    padding-left: 48px;
+    padding-right: 0;
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 24px;
+  left: 11px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--text-primary);
+  border: 3px solid var(--bg-color);
+  z-index: 2;
+  box-sizing: content-box;
+}
+
+@media (min-width: 768px) {
+  .timeline-dot {
+    left: 100%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 0;
+  }
+}
+
+.timeline-content {
+  position: relative;
+  padding: 32px;
+}
+
+/* Arrow indicator for card */
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  background: var(--surface-color);
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  transform: rotate(45deg);
+}
+
+@media (min-width: 768px) {
+  .timeline-item:nth-child(odd) .timeline-content::after {
+    left: auto;
+    right: -8px;
+    border-left: none;
+    border-bottom: none;
+    border-right: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+  }
+}
+
+.timeline-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 576px) {
+  .timeline-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.timeline-role {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.timeline-period {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.timeline-company {
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.timeline-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
