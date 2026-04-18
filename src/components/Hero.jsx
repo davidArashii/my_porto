@@ -26,7 +26,7 @@ const Hero = () => {
             <a href="#projects" className="btn btn-primary">
               View My Work <ChevronRight size={18} />
             </a>
-            <a href="mailto:davidriyankurniawan@example.com" className="btn btn-outline">
+            <a href="mailto:davidriyankurniawan@gmail.com" className="btn btn-outline">
               Contact Me
             </a>
           </div>
@@ -38,7 +38,7 @@ const Hero = () => {
             <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub">
               <Github size={20} />
             </a>
-            <a href="mailto:davidriyankurniawan@example.com" aria-label="Email">
+            <a href="mailto:davidriyankurniawan@gmail.com" aria-label="Email">
               <Mail size={20} />
             </a>
           </div>
