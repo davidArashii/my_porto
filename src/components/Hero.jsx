@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import { ChevronRight, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronRight, Gitlab, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -32,11 +32,14 @@ const Hero = () => {
           </div>
 
           <div className="hero-social">
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/davidriyankurniawan/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <Linkedin size={20} />
             </a>
-            <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <a href="https://github.com/davidArashii" target="_blank" rel="noreferrer" aria-label="GitHub">
               <Github size={20} />
+            </a>
+            <a href="https://gitlab.com/davidArashii" target="_blank" rel="noreferrer" aria-label="GitLab">
+              <Gitlab size={20} />
             </a>
             <a href="mailto:davidriyankurniawan@gmail.com" aria-label="Email">
               <Mail size={20} />
