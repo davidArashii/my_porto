@@ -33,7 +33,7 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <a href="mailto:davidriyankurniawan@example.com" className="btn btn-primary" style={{ marginLeft: '16px' }}>
+          <a href="mailto:davidriyankurniawan@gmail.com" className="btn btn-primary" style={{ marginLeft: '16px' }}>
             Contact Me
           </a>
         </div>
@@ -58,7 +58,7 @@ const Navbar = () => {
             {link.name}
           </a>
         ))}
-        <a href="mailto:contact@example.com" className="btn btn-primary" style={{ marginTop: '16px' }}>
+        <a href="mailto:davidriyankurniawan@gmail.com" className="btn btn-primary" style={{ marginTop: '16px' }}>
           Contact Me
         </a>
       </div>
