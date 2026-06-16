@@ -29,7 +29,7 @@ const About = () => {
         <div className="about-grid">
           <div className="about-text fade-in">
             <p>
-              With over 1+ years of intense, hands-on experience in building high-performance 
+              With over 4-5 years of intense, hands-on experience in building high-performance
               mobile applications, I have transitioned from a dedicated Mobile Developer 
               to a <strong>Lead Team Mobile Developer</strong>.
             </p>
