@@ -57,6 +57,32 @@
   gap: 16px;
 }
 
+/* Screenshots inside project card */
+.project-screenshots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.project-screenshot-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--bg-color);
+}
+
+.project-screenshot {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-screenshot-wrapper:hover .project-screenshot {
+  transform: scale(1.03);
+}
+
 .project-links a {
   color: var(--text-secondary);
   transition: var(--transition-smooth);
